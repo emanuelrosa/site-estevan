@@ -1,0 +1,18 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  {% include head.html %}
+  <body>
+    <section itemscope itemtype="http://schema.org/WebPage">
+
+      <article role="article" role="main" itemprop="mainContentOfPage">
+        {{ content }}
+      </article>
+
+      {% include footer.html %}
+    </section>
+  </body>
+</html>

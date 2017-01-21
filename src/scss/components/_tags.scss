@@ -1,0 +1,23 @@
+.tags__post-list {
+  list-style-type: none;
+  margin-bottom: 6rem;
+
+  .tags__post-list__item {
+    display: flex;
+    justify-content: space-between;
+
+    .tags__post-list__item__date {
+      display: none;
+      @include respond-to('small') {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.tags__cloud {
+  .button {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,9 @@
+<nav class="menu__content">
+  {% for link in site.links %}
+  {% if link.external %}
+    <p><a class="link link--animated" href="{{ link.url }}" target="_blank">{{ link.title }}</a></p>
+  {% else %}
+    <p><a class="link link--animated" href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></p>
+  {% endif %}
+  {% endfor %}
+</nav>

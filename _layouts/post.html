@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" itemscope itemtype="http://schema.org/BlogPosting">
+{% include head.html %}
+<body>
+  {% include menu-post.html %}
+  <section class="post">
+    <header>
+      <p class="huge-text post__title">{{ page.title }}</p>
+      <time itemprop="datePublished" datetime="{{ page.date }}" class="post__date">{% include header-post-date.html %}</time>
+    </header>
+
+    <article class="container" itemprop="articleBody">
+      {{ content }}
+    </article>  
+  </section>
+  {% include post-tags.html %}
+  {% include share.html %}
+
+  {% include comments.html %}
+  {% include footer.html %}
+</body>
+</html>

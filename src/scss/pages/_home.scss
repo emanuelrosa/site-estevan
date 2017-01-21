@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.page__title {
+  margin: 1rem 0 2rem;
+  
+  @include respond-to('max-medium') {
+    font-size: 7rem;
+  }
+}
+
+.link--animated--home {
+  &::before {
+    bottom:  -1em !important;
+  }
+}

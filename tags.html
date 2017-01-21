@@ -1,0 +1,48 @@
+---
+layout: minimal
+title: "tags"
+permalink: /tags/index.html
+description: "Navegue por todas as categorias dos posts já escritos no blog e encontre conteúdo específico sobre JavaScript, HTML, CSS entre outras tecnologias web."
+---
+
+{% include menu.html %}
+<section class="container">
+  <div class="menu huge-text"></div>
+  <header class="huge-text">
+    <p class="page__title">tags</p>
+  </header>
+</section>
+<div class="container">
+  <div class="tags__cloud">
+    {% assign tags_list = site.tags %}
+    {% if tags_list.first[0] == null %}
+      {% for tag in tags_list %}
+        <a href="#{{ tag | slugify }}" class="button">{{ tag }}</a>
+      {% endfor %}
+    {% else %}
+      {% for tag in tags_list %}
+        <a href="#{{ tag[0] | slugify }}" class="button">{{ tag[0] }}</a>
+      {% endfor %}
+    {% endif %}
+    {% assign tags_list = nil %}
+  </div>
+
+  {% for tag in site.tags  %}
+  <h1 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h1>
+  <ul class="tags__post-list">
+    {% assign pages_list = tag[1] %}
+    {% for post in pages_list reversed %}
+      {% if post.title != null %}
+        {% if group == null or group == post.group %}
+        <li class="tags__post-list__item">
+          <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+          <span class="tags__post-list__item__date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{% include post-date.html %}</time></span>
+        </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </ul>
+  {% endfor %}
+</div>

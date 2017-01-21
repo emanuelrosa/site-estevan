@@ -1,0 +1,18 @@
+.about__intro {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  @include respond-to('small') {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+}
+
+.about__image {
+  border-radius: 2rem;
+
+  @include respond-to('small') {
+    margin-right: 4rem;
+  }
+}

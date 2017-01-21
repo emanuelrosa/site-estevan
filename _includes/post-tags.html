@@ -1,0 +1,6 @@
+<div class="container">
+  <h3>Leia mais nessas tags</h3>
+  {% for tag in page.tags  %}
+    <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}" class="blog-post__tag">{{ tag }}</a>
+  {% endfor %}
+</div>

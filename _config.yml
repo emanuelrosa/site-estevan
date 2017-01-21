@@ -1,0 +1,43 @@
+title: Estevan Maito | Desenvolvedor web
+description: O site mais bonito do universo, de acordo comigo. Desenvolvimento web, cursos, vídeos, livros e muito código bem indentado
+baseurl: ""
+url: "https://estevanmaito.com"
+
+username: Estevan Maito
+user_description: Desenvolvedor web
+email: ejmaito@gmail.com
+twitter_username: estevanmaito
+github_username: estevanmaito
+gplus_username: estevanmaito
+disqus_username: estevanmaito
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+links:
+  - title: início
+    url: /
+  - title: blog
+    url: /blog
+  - title: vídeos
+    url: https://youtube.com/estevanmaito
+    external: true
+  - title: livros
+    url: /livros
+  - title: curso
+    url: https://cursocss.com.br
+    external: true
+  - title: código
+    url: https://github.com/estevanmaito
+    external: true
+  - title: sobre
+    url: /sobre
+
+exclude: ['package.json', 'src', 'node_modules', 'yarn.lock']

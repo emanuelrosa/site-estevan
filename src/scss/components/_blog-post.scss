@@ -1,0 +1,52 @@
+.blog-post {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  // font-size: 1.8rem;
+  margin-bottom: 3rem;
+
+  .blog-post__header {
+    &:hover .link--animated {
+      &::before {
+        max-height: 1em;
+      }
+    }
+  }
+
+  .blog-post__date {
+    display: block;
+    font-size: 1.5rem;
+    color: $mid-grey;
+  }
+
+  .blog-post__link {
+    text-decoration: none;
+  }
+
+  .blog-post__title {
+    font-family: Nunito, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    color: $text-color;
+    line-height: 1.8;
+  }
+
+  .blog-post__description {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: $text-color;
+  }
+}
+
+.blog-post__tag {
+  font-family: Nunito, "Helvetica Neue", Arial, sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $text-color;
+  border: 2px solid $brand-color;
+  border-radius: 4px;
+  padding: 0 0.9rem;
+  line-height: 1.4;
+
+  &:hover {
+    font-weight: bold;
+  }
+}

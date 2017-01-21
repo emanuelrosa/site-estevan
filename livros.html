@@ -1,0 +1,29 @@
+---
+layout: minimal
+title: "livros"
+permalink: /livros/index.html
+description: "Livros escritos por Estevan Maito, sobre HTML, CSS e JavaScript. Uma forma muito efetiva e pouco usual de escrita, com muitos exercícios e capítulos curtos."
+---
+{% include menu.html %}
+<section class="container">
+  <div class="menu huge-text"></div>
+  <header class="huge-text">
+    <p class="page__title">livros</p>
+  </header>
+
+  <div class="books">
+    <article class="book" itemscope itemtype="http://schema.org/Book">
+      <img itemprop="image" src="../assets/img/livro-html.png" alt="Capa do livro Aprenda HTML e CSS" class="book__image">
+      <h2 class="book__title" itemprop="name">Aprenda HTML e CSS</h2>
+      <p class="book__description">Livro básico com conceitos atualizados do HTML5 e últimas especificações do CSS, como Flexbox. Mais de 800 exercícios online para praticar cada um dos mais de 80 capítulos.</p>
+      <a href="http://www.aprendahtmlecss.com.br" target="_blank">saiba mais</a>
+    </article>
+    <article class="book" itemscope itemtype="http://schema.org/Book">
+      <img itemprop="image" src="../assets/img/livro-js.png" alt="" class="book__image">
+      <h2 class="book__title" itemprop="name">JavaScript</h2>
+      <p class="book__description">Livro em construção sobre JavaScript, cobrindo toda a linguagem, desde o início, atualizado para as últimas versões do EcmaScript (ES6+). Lançamento esperado para junho/17.</p>
+    </article>
+  </div>
+  <br><br>  
+
+</section>

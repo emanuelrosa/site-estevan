@@ -1,0 +1,32 @@
+.books {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+
+  @include respond-to('small') {
+    flex-flow: row wrap;
+  }
+
+  .book {
+    &:first-child {
+      margin-bottom: 4rem;
+    }
+    
+    @include respond-to('small') {
+      width: 45%;
+      
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .book__image {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .book__description {
+
+    }
+  }
+}

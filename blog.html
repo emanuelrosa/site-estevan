@@ -1,0 +1,35 @@
+---
+layout: default
+title: "blog"
+permalink: /blog/index.html
+description: "Blog sobre desenvolvimento web, front e backend, tutoriais, dicas e qualquer coisa que possa ter HTML, CSS e JavaScript envolvidos."
+---
+
+{% include menu.html %}
+<main class="container" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+  <div class="menu huge-text"></div>
+  <header class="huge-text">
+    <p class="page__title">blog</p>
+  </header>
+  {% for post in site.posts %}
+    <article role="article" class="blog-post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+      <header class="blog-post__header">
+        <span class="blog-post__date">
+          {% include post-date.html %}
+        </span>
+        <meta itemprop="datePublished" content="{{post.date}}">
+        <h2 class="blog-post__title">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="link link--animated" itemprop="name">{{ post.title }}</a>
+        </h2>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="blog-post__link">
+          <p class="blog-post__description">
+            {% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncatewords:30 }}{% endif %}
+          </p>
+        </a>
+      </header>
+      {% for tag in post.tags %}
+        <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}" class="blog-post__tag">{{ tag }}</a>
+      {% endfor %}
+    </article>
+  {% endfor %}
+</main>

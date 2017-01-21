@@ -1,0 +1,26 @@
+.huge-text {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 800;
+  font-family: Nunito, "Helvetica Neue", Arial, sans-serif;
+
+  .huge-text__line {
+    margin: 0;
+  }
+
+  @include respond-to('small') {
+    font-size: 5rem;
+  }
+
+  @include respond-to('medium') {
+    font-size: 7rem;
+  }
+
+  @include respond-to('large') {
+    font-size: 10rem;
+  }
+
+  @include respond-to('huge') {
+    font-size: 15rem;
+  }
+}

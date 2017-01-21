@@ -1,0 +1,38 @@
+.post {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* font-size: 2rem; */
+  letter-spacing: 0.16px;
+
+  .post__title {
+    width: 80%;
+    max-width: 1600px;
+    margin: 2rem auto 0;
+    text-align: center;
+
+    @include respond-to('max-medium') {
+      font-size: 4rem;
+    }
+  }
+
+  .post__date {
+    display: block;
+    font-size: 1.5rem;
+    color: $mid-grey;
+    margin: 2rem 0 3.5rem;
+    text-align: center
+  }
+
+  figure {
+    margin: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  figcaption {
+    color: $mid-grey;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
