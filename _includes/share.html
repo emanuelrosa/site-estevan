@@ -10,9 +10,7 @@
     facebook
   </a>
   <a
-    href="whatsapp://send"
-    data-text="{{ page.twitter_text }}"
-    data-href="{{ site.url }}{{ page.url }}"
+    href="whatsapp://send?text={{ page.twitter_text }} {{ site.url }}{{ page.url }}"
     class="button"
   >
     whatsapp
