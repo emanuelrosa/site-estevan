@@ -1,7 +1,7 @@
 title: Estevan Maito | Desenvolvedor web
 description: O site mais bonito do universo, de acordo comigo. Desenvolvimento web, cursos, vídeos, livros e muito código bem indentado
-baseurl: ""
-url: "https://estevanmaito.com"
+baseurl: 
+url: https://estevanmaito.com
 
 username: Estevan Maito
 user_description: Desenvolvedor web
