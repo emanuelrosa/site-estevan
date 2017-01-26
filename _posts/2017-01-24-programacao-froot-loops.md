@@ -45,6 +45,8 @@ Como em qualquer lugar em que estejam inseridas, **as cores são usadas desde se
 
 Muitas cores chamando a atenção, onde quer que estejam (no site acima ou no código), reduzem a legibilidade do texto. Releia a linha 19 do tema escuro acima. Qual a necessidade de chamar a atenção para-cada-palavra-na-linha (leu pausado, né?)? A diferença pode ser da casa dos milésimos, senão menos, mas ao longo de um dia inteiro acabamos nos dispersando do nosso real objetivo como desenvolvedores: escrever código legível. E código legível não pode depender de cores.
 
+{% include newsletter.html %}
+
 O argumento de que a sintaxe colorida pode ajudar a encontrar erros como uma chave não fechada, por exemplo, não se sustenta usando um bom linter, como o [ESLint](http://eslint.org){:target="_blank"}.
 
 O Douglas Crockford falou sobre isso um tempo atrás:

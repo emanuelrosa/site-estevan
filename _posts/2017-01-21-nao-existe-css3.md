@@ -21,6 +21,8 @@ Vamos voltar um pouco no tempo, até quando saiu a última grande versão do CSS
 
 Depois de ver que isso não seria uma boa ideia, o CSS Working Group (CSSWG) decidiu dividir o projeto em módulos. O que já estava na versão 2.1 e continuaria sendo desenvolvido, evoluiu pro level 3. Alguns exemplos são: selectors, backgrounds, borders, fonts, text decoration e por aí vai. O que foi sendo adicionado ao CSS depois disso, começou da versão 1, em que temos alguns exemplos bem conhecidos como: masking, flexbox, grid, blanding e [filters](https://css-tricks.com/almanac/properties/f/filter/){:target="_blank"}.
 
+{% include newsletter.html %}
+
 Ou seja, quem contrata alguém que saiba CSS3, não quer alguém que conheça flexbox, por exemplo, já que ele ainda está no level 1. Na teoria.
 
 ## Quem inventou o termo CSS3?
