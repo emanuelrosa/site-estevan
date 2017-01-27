@@ -37,4 +37,4 @@ Se isso não te convenceu, talvez o gráfico abaixo, te faça pensar no que voc�
 
 Com uma inclusão mínima de código, você já consegue adicionar essa opção de compartilhamento ao seu site e começa a converter essas ações que antes poderiam se perder por falta de opção. Inclusive, muitas operadoras oferecem pacotes de dados gratuitos para Whatsapp, o que torna essa uma alternativa muito em conta.
 
-Nada me vem à mente que explique o porquê de grandes portais do Brasil não utilizarem essa opção e optarem pelo Pinterest, por exemplo, que no ranking acima está em 19º. Quem aqui já *pinou* uma notícia?
+Nada me vem à mente que explique o porquê de grandes portais do Brasil não utilizarem essa opção e optarem pelo Pinterest, por exemplo. Quem aqui já *pinou* uma notícia?
